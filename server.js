@@ -40,8 +40,8 @@ server.get("/api/todos/:id", (req, res) => {
 //-------------------------------------ADD TODO-------------------------------------------
 server.post('/api/todos', (req, res) => {
   const newTodo = req.body;
-  const { title, content } = req.body;
-  if (!title || !content) {
+  const { title, content, date } = req.body;
+  if (!title || !content || !date) {
       res.status(400).json({ error: 'Todo title and content required' });
       return;
   }

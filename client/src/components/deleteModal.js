@@ -4,7 +4,7 @@ import { toggleDelete, deleteTodo } from '../redux/actions';
 import { Link } from 'react-router-dom';
 
  const DeleteModal = props => {
-  const todoInfo = props.selectNote[0]
+  const todoInfo = props.selectTodo[0]
   return (
   <div className="modal-dialog" role="document">
     <div className="modal-content" style={{marginTop:'100px'}}>

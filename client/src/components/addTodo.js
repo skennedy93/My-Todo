@@ -8,6 +8,7 @@ import { Redirect } from 'react-router-dom';
     newTodo: {
       title: '',
       content: '',
+      date: '',
     },
     redirect: false,
   };
@@ -39,6 +40,15 @@ import { Redirect } from 'react-router-dom';
               onChange={this.changeValue}
               className="form-control"
               style={{fontSize:'50px'}}
+             />
+            <input
+              type="date"
+              name="date"
+              placeholder="00/00/00"
+              value={this.state.newTodo.date}
+              onChange={this.changeValue}
+              className="form-control"
+              style={{fontSize:'30px'}}
              />
             <textarea style={{height:'450px',fontSize:'30px'}}
               name="content"

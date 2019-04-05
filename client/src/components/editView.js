@@ -43,6 +43,15 @@ import { Redirect } from 'react-router-dom';
             className="form-control"
             style={{fontSize:'50px'}}
           />
+          <input
+            type="text"
+            value={this.state.todo.date}
+            name="title"
+            placeholder="Note Title"
+            onChange={this.changeValue}
+            className="form-control"
+            style={{fontSize:'50px'}}
+          />
           <textarea style={{height:'420px',fontSize:'30px'}}
             name="content"
             value={this.state.todo.content}
